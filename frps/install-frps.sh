@@ -406,7 +406,7 @@ pre_install_clang(){
         read -p "Enter your choice (1, 2 or exit. default [1]): " str_log_file
         case "${str_log_file}" in
             1|[yY]|[yY][eE][sS]|[oO][nN]|[tT][rR][uU][eE]|[eE][nN][aA][bB][lL][eE])
-                str_log_file="./frps.log"
+                str_log_file="/var/log/frps.log"
                 str_log_file_flag="enable"
                 ;;
             0|2|[nN]|[nN][oO]|[oO][fF][fF]|[fF][aA][lL][sS][eE]|[dD][iI][sS][aA][bB][lL][eE])
@@ -417,7 +417,7 @@ pre_install_clang(){
                 exit 1
                 ;;
             *)
-                str_log_file="./frps.log"
+                str_log_file="/var/log/frps.log"
                 str_log_file_flag="enable"
                 ;;
         esac
