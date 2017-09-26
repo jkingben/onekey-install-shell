@@ -7,3 +7,8 @@
 安装平台：CentOS、Debian、Ubuntu。
 
 如需帮助请看相关README文件
+
+
+wget --no-check-certificate https://raw.githubusercontent.com/jkingben/onekey-install-shell/master/frps/install-frps.sh -O ./install-frps.sh
+chmod 700 ./install-frps.sh
+./install-frps.sh install
