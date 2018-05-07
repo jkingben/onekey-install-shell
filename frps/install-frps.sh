@@ -10,13 +10,14 @@ export PATH
 program_name="frps"
 version="1.8.3"
 str_program_dir="/usr/local/${program_name}"
-aliyun_download_url="https://code.aliyun.com/clangcn/frp/raw/master"
+#aliyun_download_url="https://code.aliyun.com/clangcn/frp/raw/master"
+aliyun_download_url="https://github.com/fatedier/frp/releases/download"
 github_download_url="https://github.com/fatedier/frp/releases/download"
 program_version="0.18.0"
 program_init="/etc/init.d/${program_name}"
 program_config_file="frps.ini"
-program_init_download_url=https://raw.githubusercontent.com/clangcn/onekey-install-shell/master/frps/frps.init
-str_install_shell=https://raw.githubusercontent.com/clangcn/onekey-install-shell/master/frps/install-frps.sh
+program_init_download_url=https://raw.githubusercontent.com/jkingben/onekey-install-shell/master/frps/frps.init
+str_install_shell=https://raw.githubusercontent.com/jkingben/onekey-install-shell/master/frps/install-frps.sh
 shell_update(){
     fun_clangcn "clear"
     echo "Check updates for shell..."
